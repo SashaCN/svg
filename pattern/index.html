@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="300" height="200" viewBox="0 0 300 200"> 
+        <defs>
+            <linearGradient id="gradient"
+            x1="-5%" y1="0"
+            x2="5%" y2="0"
+            spreadMethod="repeat">
+                <stop  
+                    offset="50%"
+                    stop-color="#7dc4e8"                
+                />
+                <stop 
+                    offset="50%" 
+                    stop-color="#b1dcf1"
+                    
+                />
+            </linearGradient>
+            <pattern id="pattern" width="10" height="10" x="0" y="0" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="10" height="10" fill="#ff401a"/>
+                <circle 
+                    cx="5" cy="5"
+                    r="2" fill="#fff"
+                />
+            </pattern>
+        </defs>
+        <rect 
+            width="300"
+            height="200"
+            fill="url(#gradient)"
+            x="0"
+            y="0"
+        />
+        <text
+            x="38" y="75"
+            font-size="45"
+            font-family="Lobster"
+            fill="black"
+            fill-opacity=".3"
+            stroke="none"
+            textLength="27 0"
+            lengthAdjust="spacingAndGlyphs"
+        >
+            the Breaking
+        </text>
+        <text
+            x="36" y="70"
+            font-size="45"
+            font-family="Lobster"
+            fill="#f4b400"
+            stroke="#fff"
+            stroke-width="1"
+            textLength="27 0"
+            lengthAdjust="spacingAndGlyphs"
+        >
+            the Breaking
+        </text>
+        <text
+            x="86" y="155"
+            font-size="80"
+            font-family="Lobster"
+            fill="black"
+            fill-opacity=".3"
+            stroke="none"
+            textLength="27 0"
+            lengthAdjust="spacingAndGlyphs"
+        >
+            Bad
+        </text>
+        <text
+            x="82" y="150"
+            font-size="80"
+            font-family="Lobster"
+            fill="url(#pattern)"
+            stroke="#fff"
+            stroke-width="1"
+            textLength="27 0"
+            lengthAdjust="spacingAndGlyphs"
+        >
+            Bad
+        </text>
+    </svg>
+</body>
+</html>

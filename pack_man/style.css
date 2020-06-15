@@ -1,0 +1,184 @@
+body{
+    background-color: #000;
+}
+.first,
+.second{
+    position: absolute;
+    z-index: 10;
+}
+.first div,
+.second div{
+    border: 50px solid yellow;
+    border-radius: 50%;
+    transform-origin: center;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+.second div{
+    animation: eat .3s linear infinite alternate-reverse;
+}
+.second{
+    transform: rotate(225deg);
+}
+.first div{
+    animation: eat .3s linear infinite alternate;
+}
+.pack-man{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+}
+.move{
+    position: absolute;
+    top: 38%;
+    left: 38%;
+    transform: rotate(0deg) translate(-50%, -50%);
+    transform-origin: left top;
+    animation: move 10s linear infinite;
+    width: 100px;
+    height: 100px;
+}
+@keyframes eat{
+    100%{
+        transform: rotate(-45deg);
+    }
+}
+@keyframes move{
+    0%{
+        top: 38%;
+        left: 38%;
+        transform: rotate(0deg) translate(-50%, -50%);
+    }
+    24%{
+        top: 38%;
+        left: 63%;
+        transform: rotate(0deg) translate(-50%, -50%);
+    }
+    25%{
+       transform: rotate(90deg) translate(-50%, -50%); 
+    }
+    49%{
+        top: 63%;
+        left: 63%;
+        transform: rotate(90deg) translate(-50%, -50%);
+    }
+    50%{
+        transform: rotate(180deg) translate(-50%, -50%); 
+    }
+    74%{
+        top: 63%;
+        left: 38%;
+        transform: rotate(180deg) translate(-50%, -50%);
+    }
+    75%{
+        transform: rotate(270deg) translate(-50%, -50%);
+    }
+    99%{
+        top: 38%;
+        left: 38%;
+        transform: rotate(270deg) translate(-50%, -50%);
+    }
+    100%{
+        transform: rotate(360deg) translate(-50%, -50%);
+    }
+}
+span{
+    position: absolute;
+    z-index: -1;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffaaa5;
+}
+.one{
+    top: 37.5%;
+    left: 37.5%;
+    animation: point 10s linear infinite;
+}
+.two{
+    top: 37.5%;
+    left: 43.75%;
+    animation: point 10s linear .625s infinite;
+}
+.three{
+    top: 37.5%;
+    left: 50%;
+    animation: point 10s linear 1.25s infinite;
+}
+.four{
+    top: 37.5%;
+    left: 56.25%;
+    animation: point 10s linear 1.875s infinite;
+}
+.five{
+    top: 37.5%;
+    left: 62.5%;
+    animation: point 10s linear 2.5s infinite;
+}
+.six{
+    top: 43.75%;
+    left: 62.5%;
+    animation: point 10s linear 3.125s infinite;
+}
+.seven{
+    top: 50%;
+    left: 62.5%;
+    animation: point 10s linear 3.75s infinite;
+}
+.eight{
+    top: 56.25%;
+    left: 62.5%;
+    animation: point 10s linear 4.475s infinite;
+}
+.nine{
+    top: 62.5%;
+    left: 62.5%;
+    animation: point 10s linear 5.1s infinite;
+}
+.ten{
+    top: 62.5%;
+    left: 56.25%;
+    animation: point 10s linear 5.725s infinite;
+}
+.eleven{
+    top: 62.5%;
+    left: 50%;
+    animation: point 10s linear 6.35s infinite;
+}
+.twelve{
+    top: 62.5%;
+    left: 43.75%;
+    animation: point 10s linear 6.975s infinite;
+}
+.thirteen{
+    top: 62.5%;
+    left: 37.5%;
+    animation: point 10s linear 7.6s infinite;
+}
+.fourteen{
+    top: 56.25%;
+    left: 37.5%;
+    animation: point 10s linear 8.225s infinite;
+}
+.fiftteen{
+    top: 50%;
+    left: 37.5%;
+    animation: point 10s linear 8.85s infinite;
+}
+.sixteen{
+    top: 43.75%;
+    left: 37.5%;
+    animation: point 10s linear 9.475s infinite;
+}
+@keyframes point{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+}
